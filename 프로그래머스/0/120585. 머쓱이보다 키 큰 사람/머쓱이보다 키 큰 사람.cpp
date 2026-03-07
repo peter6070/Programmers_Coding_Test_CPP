@@ -5,8 +5,8 @@ using namespace std;
 
 int solution(vector<int> array, int height) {
     int answer = 0;
-    for(int i : array){
-        answer = i > height ? answer+1:answer;
+    for(const auto v : array){
+        answer += (v > height);
     }
     return answer;
 }
