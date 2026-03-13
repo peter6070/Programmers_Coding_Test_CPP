@@ -10,7 +10,7 @@ int solution(int hp) {
     hp = hp%5;
     answer += hp/3;
     hp = hp%3;
-    answer += hp/1;
+    answer += hp;
     
     return answer;
 }
