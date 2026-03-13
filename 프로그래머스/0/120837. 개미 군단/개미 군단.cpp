@@ -5,23 +5,12 @@ using namespace std;
 
 int solution(int hp) {
     int answer = 0;
-    while(hp>=0){
-        if(hp<=0) return answer;
-        else if(hp >= 5){
-            answer++;
-            hp-=5;
-        }
-        else if(hp>=3){
-            answer++;
-            hp-=3;
-        }
-        else{
-            answer++;
-            hp--;
-        }
-            
-    }
     
+    answer += hp/5;
+    hp = hp%5;
+    answer += hp/3;
+    hp = hp%3;
+    answer += hp/1;
     
     return answer;
 }
