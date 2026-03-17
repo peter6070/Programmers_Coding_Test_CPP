@@ -12,5 +12,5 @@ int solution(vector<int> numbers) {
     
     int maxNeg = numbers[0] * numbers[1]; //앞에서 1,2번째 값 곱하기(최솟값 2개)
     
-    return maxPos > maxNeg ? maxPos : maxNeg;
+    return max(maxPos, maxNeg);
 }
