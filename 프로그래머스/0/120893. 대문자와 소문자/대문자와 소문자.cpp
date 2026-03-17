@@ -5,9 +5,9 @@ using namespace std;
 
 string solution(string my_string) {
     for(auto& s : my_string){
-        if('A'<= s && s <= 'Z')
+        if(isupper(s))
             s = s +32;
-        else if('a' <= s && s<='z')
+        else
             s = s-32;
     }
     return my_string;
